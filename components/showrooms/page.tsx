@@ -5,8 +5,8 @@ const ShowRooms = () => {
   
 
   return (
-    <section className=" py-8">
-      <div className="container mx-auto px-4">
+    <div className="py-8 flex mx-auto">
+      <div className="mx-auto px-4">
         <h2 className="text-2xl font-semibold mb-6">You may also like</h2>
         <div className="grid grid-cols-1  md:grid-cols-2 2xl:grid-cols-3  gap-6">
           {showRoomsData.slice(0, 5).map((card, index) => (
@@ -34,7 +34,7 @@ const ShowRooms = () => {
                   <span>{card.sqft} sqft</span>
                 </div>
                 <div className="flex justify-between items-center">
-                  <button className="bg-blue-600 text-white px-6 py-2 rounded-md hover:bg-blue-700 transition duration-300">Book Now</button>
+                  <button className="bg-[#007DD0] text-white px-10 py-2 rounded-md hover:bg-[#007DE2] transition duration-300">Book Now</button>
                   <button className="text-gray-500 hover:text-gray-700">
                     <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
                   </button>
@@ -44,7 +44,7 @@ const ShowRooms = () => {
           ))}
         </div>
       </div>
-    </section>
+    </div>
   );
 };
 

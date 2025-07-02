@@ -6,8 +6,7 @@ import { AirVent, Dumbbell } from 'lucide-react';
 const Services = () => {
 
   return (
-    <div className="bg-white p-4 md:p-6 w-full ">
-      {/* Tabs */}
+    <div className="bg-white p-1 md:p-6 w-full ">
       <div className="flex border-b border-gray-200 mb-6">
         <button
           className={`py-2 px-4 text-sm md:text-base font-medium border-b-2 border-blue-600`}
@@ -47,23 +46,18 @@ const Services = () => {
 
           <h3 className="text-lg md:text-xl font-semibold text-gray-800 mb-4">Features</h3>
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-            {/* Wifi Feature */}
             <div className="flex items-center bg-gray-50 px-3 py-2 rounded-lg border border-gray-200 text-gray-700 text-sm">
               <WifiIcon className="h-4 w-4 mr-2 text-blue-500" /> Wifi
             </div>
-            {/* Dining Feature with X */}
             <div className="flex items-center bg-gray-50 px-3 py-2 rounded-lg border border-gray-200 text-gray-700 text-sm">
               <XMarkIcon className="h-4 w-4 mr-2 text-red-500" /> Dining {/* ছবিতে 'X' ছিল */}
             </div>
-            {/* Swimming Pool Feature */}
             <div className="flex items-center bg-gray-50 px-3 py-2 rounded-lg border border-gray-200 text-gray-700 text-sm">
               <SunIcon className="h-4 w-4 mr-2 text-blue-500" /> Swimming Pool
             </div>
-            {/* Air Conditioning Feature */}
             <div className="flex items-center bg-gray-50 px-3 py-2 rounded-lg border border-gray-200 text-gray-700 text-sm">
               <AirVent  className="h-4 w-4 mr-2 text-blue-500" /> Air Conditioning
             </div>
-            {/* Gym Feature */}
             <div className="flex items-center bg-gray-50 px-3 py-2 rounded-lg border border-gray-200 text-gray-700 text-sm">
               <Dumbbell  className="h-4 w-4 mr-2 text-blue-500" /> Gym
             </div>

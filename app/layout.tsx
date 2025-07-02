@@ -15,12 +15,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`antialiased min-w-screen ring-4`}>
-        <div className="min-w-screen ring-2">
+      <body className={`antialiased `}>
+        <div className="min-w-screen ">
           <Navbar/>
-          <main className="container  ring-2 p-4">
+          <div className="py-1 ">
             {children}
-          </main>
+          </div>
           <Footer/>
         </div>
       </body>

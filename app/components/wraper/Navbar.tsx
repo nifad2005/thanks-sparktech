@@ -53,10 +53,10 @@ export default function Navbar() {
   };
 
   return (
-    <div className="bg-[#A5D3F1] w-full  text-slate-900 p-4">
-      {/* Logo and title */}
+    <div className="bg-[#A5D3F1] absolute w-screen z-100  text-slate-900 py-4">
+
       {/* Mobile view */}
-      <div className="block md:hidden  ">
+      <div className="block xl:hidden  ">
         <div className="flex justify-end ">
           <button
             className=" "
@@ -71,10 +71,10 @@ export default function Navbar() {
               </div>
             ) : (
               <div className="flex justify-between items-center space-x-2">
-                <Link href="/" className="text-2xl font-bold text-white absolute left-4 ">
+                <Link href="/" className="text-2xl font-bold text-black absolute left-4 ">
                   Nifad
                 </Link>
-                <span className="text-white">
+                <span className="text-black">
                   <Menu />
                 </span>
               </div>
@@ -83,7 +83,7 @@ export default function Navbar() {
         </div>
         {isMobileMenuOpen && (
           <div className="mt-2 flex flex-col gap-4">
-            <Link href="/" className="text-2xl font-bold text-white">
+            <Link href="/" className="text-2xl font-bold text-black">
               Nifad
             </Link>
             <ul className="space-y-2">
@@ -96,11 +96,11 @@ export default function Navbar() {
                     duration: 0.3,
                     delay: 0.1 * navLinks.indexOf(link),
                   }}
-                  className="text-white hover:text-gray-400"
+                  className="text-black hover:text-gray-400"
                 >
                   <Link
                     href={link.link}
-                    className="text-white hover:text-gray-400"
+                    className="text-black "
                   >
                     {link.name}
                   </Link>
@@ -130,7 +130,7 @@ export default function Navbar() {
               </Select>
 
               <Select>
-                <SelectTrigger className="w-[150px]">
+                <SelectTrigger className="w-[150px] text-black">
                   <SelectValue placeholder="Select a country" />
                 </SelectTrigger>
                 <SelectContent>
@@ -148,7 +148,7 @@ export default function Navbar() {
                   </SelectGroup>
                 </SelectContent>
               </Select>
-              <Button className="w-[150px] ring-2 ring-sky-600 bg-transparent hover:bg-sky-600 hover:text-white">
+              <Button className="w-[150px] ring-2 ring-sky-600 bg-transparent hover:bg-sky-600 hover:text-black">
                 List you property{" "}
                 <span>
                   <MoveUpRight />
@@ -174,7 +174,7 @@ export default function Navbar() {
       </div>
 
       {/* Desktop view */}
-      <div className="hidden md:block sm:px-40  md:px-62">
+      <div className="hidden xl:flex justify-center ">
         <div className="flex justify-between items-center">
           <div className="flex items-center space-x-10">
             <Link href="/" className="text-2xl font-bold ">

@@ -15,7 +15,7 @@ const images = [
 
 export default function ImageGrid() {
   return (
-    <div className="grid grid-cols-5 grid-rows-3 gap-2 w-full  mx-auto rounded-lg overflow-hidden">
+    <div className="grid grid-cols-5 grid-rows-3 gap-2 w-full px-2  mx-auto rounded-lg overflow-hidden">
       {images.map((img, i) => (
         <div
           key={i}

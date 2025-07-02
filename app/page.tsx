@@ -11,7 +11,7 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-  <main className="xl:w-[90%] w-full *:w-full  mx-auto flex flex-col items-center ">
+  <main className="xl:w-[90%] w-full *:w-full  mx-auto flex flex-col items-center mt-22 mb-12 ">
     {/* hero section /* */}
     <section className="flex flex-col items-center justify-center w-full ">
       <HeroText />
